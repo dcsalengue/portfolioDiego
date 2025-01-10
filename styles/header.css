@@ -1,0 +1,108 @@
+header {
+    display: flex;
+    position: fixed;
+    height:80px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--background-header);
+}
+
+header input {
+    display: none;
+}
+
+.main-title {
+    font-family: 'DM', sans-serif;
+    font-size: 28px;
+    color: var(--title-color);
+    padding: 1em 0;
+}
+
+
+
+.custom-checkbox div {
+    background: url("../assets/botao_deslizante_verde.svg");
+    width: 64px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background 1.0s;
+
+}
+
+
+.custom-checkbox div:hover {
+    cursor: pointer;
+}
+
+/* Quando o checkbox está marcado */
+#chk-theme:checked+.custom-checkbox div {
+    background: url("../assets/botao_deslizante_preto.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background 1.0s;
+
+}
+
+.header__menu {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--menu-icon);
+    background-size: cover;
+}
+
+.header__menu label div {
+    width: 100%;
+    height: 100%;
+}
+
+.header__menu:hover {
+    opacity: 80%;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.floating-menu::before {
+    position: relative;
+}
+
+.floating-menu {
+    display: none;
+    padding: 3em ;
+    flex-direction: column;
+    align-items: center ;
+    gap: 5rem;;
+    z-index: 10;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo opaco */
+}
+
+/* Mostra o menu quando o checkbox está marcado */
+#menu-toggle:checked~.floating-menu {
+    display: flex;
+}
+
+/* Permite que o menu flutuante fique visível ao navegar */
+.floating-menu:hover {
+    display: flex;
+}
+
+.floating-menu__link {
+    color: var(--title-color);
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.floating-menu__link:hover {
+    color: var(--strong-color);
+    transform: scale(1.5);
+    transition: ease 0.5s ;
+    text-decoration: none;
+}

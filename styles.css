@@ -13,6 +13,7 @@
     --text-color: #89A1A0;
     --strong-color: #348E91;
     --title-color: #F2F2F2;
+    --link-color: #F2F2F2;
     --button-gradient: radial-gradient(circle, rgba(63, 180, 184, 1) 49%, rgba(28, 80, 82, 1) 82%);
     --menu-icon: url("/assets/icone_menu_hamburger_verde.svg");
     --botao-fechar: url("/assets/botao_fechar_verde.png")
@@ -24,6 +25,7 @@
     --text-color: #89A1A0;
     --strong-color: #348E91;
     --title-color: #202020;
+    --link-color: #F2F2F2;;
     --button-gradient: radial-gradient(circle, rgba(63, 180, 184, 1) 49%, rgba(28, 80, 82, 1) 82%);
     --menu-icon: url("/assets/icone_menu_hamburger_cinza.svg");
     --botao-fechar: url("/assets/botao_fechar_cinza.png")
@@ -41,6 +43,20 @@ body {
     min-height: 100vh;
 }
 
+.titulo-secao {
+    font-family: 'Popins', sans-serif;
+    font-size: 28px;
+    color: var(--title-color);
+    padding: 1em 0;
+}
+
+.paragrafo-secao {
+    font-family: 'DM', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    padding: 1em 0;
+}
 
 main{
     z-index: 1;
@@ -50,16 +66,20 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 50em;
+    gap: 5em;
 }
 
 .main__section {
+    scroll-margin-top: 85px; 
+    display: flex;
+    flex-direction: column;
     font-size: xx-large;
     display: flex;
+    padding: 1em;
     text-align: center;
     justify-content:center ;
     align-items: center;
     width: 100%;
-    height: 100%;
-    border: solid 2px red;
+    height: auto;
+    /* border: solid 2px red; */
 }

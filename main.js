@@ -15,14 +15,25 @@ togleTheme.addEventListener('change', () => {
 floatingMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
         menuToggle.checked = false;
-        
+        floatingMenu.style.display = 'none'
+
     })
 });
 
 
-floatingMenu.addEventListener('mouseover', ()=>{
-    if(!menuToggle.checked)
-        floatingMenu.style.display = 'none'   
+headerMenu.addEventListener("click", () => {
+    console.log('headerMenu');
+    if (floatingMenu.style.display === 'flex') {
+        floatingMenu.style.display = 'none';
+        headerMenu.classList.remove("icone_fechar") ;
+        headerMenu.classList.add("icone_hamburger") ;
+
+    }
+    else {
+        floatingMenu.style.display = 'flex'
+        headerMenu.classList.add("icone_fechar") ;
+        headerMenu.classList.remove("icone_hamburger") ;
+
+    }
 
 })
-

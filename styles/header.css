@@ -49,9 +49,22 @@ header input {
     position: relative;
     display: inline-block;
     width: 40px;
-    height: 40px;
+    height: 40px;    
+    
+}
+
+.icone_hamburger {
     background: var(--menu-icon);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icone_fechar{
+    background: var(--botao-fechar); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
 }
 
 .header__menu label div {
@@ -60,9 +73,11 @@ header input {
 }
 
 .header__menu:hover {
-    opacity: 80%;
+    opacity: 50%;
     cursor: pointer;
     transform: scale(1.2);
+    background-color: rgba(42, 165, 161, 0.159);
+    padding: 1em;
 }
 
 .floating-menu::before {
@@ -84,15 +99,7 @@ header input {
     background-color: rgba(0, 0, 0, 0.3); /* Fundo opaco */
 }
 
-/* Mostra o menu quando o checkbox está marcado */
-#menu-toggle:checked~.floating-menu {
-    display: flex;
-}
 
-/* Permite que o menu flutuante fique visível ao navegar */
-.floating-menu:hover {
-    display: flex;
-}
 
 .floating-menu__link {
     color: var(--title-color);

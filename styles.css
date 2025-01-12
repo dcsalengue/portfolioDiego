@@ -14,6 +14,7 @@
     --title-color: #F2F2F2;
     --button-gradient: radial-gradient(circle, rgba(63, 180, 184, 1) 49%, rgba(28, 80, 82, 1) 82%);
     --menu-icon: url("/assets/icone_menu_hamburger_verde.svg");
+    --botao-fechar: url("/assets/botao_fechar_verde.png")
 }
 
 [theme="claro"] {
@@ -24,6 +25,7 @@
     --title-color: #202020;
     --button-gradient: radial-gradient(circle, rgba(63, 180, 184, 1) 49%, rgba(28, 80, 82, 1) 82%);
     --menu-icon: url("/assets/icone_menu_hamburger_cinza.svg");
+    --botao-fechar: url("/assets/botao_fechar_cinza.png")
 }
 
 html {

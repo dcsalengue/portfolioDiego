@@ -1,0 +1,56 @@
+.section__banner {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 0;
+    border: none;
+}
+
+.banner__imagem-perfil {
+    border-radius: 40px;
+}
+
+.banner__apresentacao {
+    color: var(--title-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.banner__apresentacao strong {
+    color: var(--strong-color);
+}
+
+.banner__texto {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.banner__botao-solido, .banner__botao-vazado {
+    border-radius: 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1em;
+    width: 300px;
+    z-index: 20;
+}
+
+.banner__botao-solido a, .banner__botao-vazado a{
+    color: var(--title-color);
+    text-decoration: none; 
+}
+
+.banner__botao-solido:hover, .banner__botao-vazado:hover {
+    
+    cursor: pointer;
+    opacity: 50;
+}
+
+.banner__botao-vazado { 
+    border: solid 1px var(--strong-color);
+}
+
+.banner__botao-solido { 
+    background: var(--button-gradient);
+}

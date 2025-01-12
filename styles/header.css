@@ -3,9 +3,11 @@ header {
     position: fixed;
     height:80px;
     width: 100vw;
+    top: 0px;
     align-items: center;
     justify-content: space-around;
     background: var(--background-header);
+    z-index: 20;
 }
 
 header input {
@@ -76,7 +78,7 @@ header input {
     opacity: 50%;
     cursor: pointer;
     transform: scale(1.2);
-    background-color: rgba(42, 165, 161, 0.159);
+    background-color: rgba(42, 165, 161, 0.441);
     padding: 1em;
 }
 
@@ -96,7 +98,7 @@ header input {
     left: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3); /* Fundo opaco */
+    background-color: rgba(0, 0, 0, 0.677); /* Fundo opaco */
 }
 
 

@@ -39,12 +39,12 @@
 .banner__botao-solido a, .banner__botao-vazado a{
     color: var(--title-color);
     text-decoration: none; 
+    transition: color 0.5s ease, transform 0.5s ease; /* Transição ao sair */
 }
 
 .banner__botao-solido:hover, .banner__botao-vazado:hover {
-    
     cursor: pointer;
-    opacity: 50;
+    /* opacity: 50;   */
 }
 
 .banner__botao-vazado { 

@@ -40,9 +40,13 @@
             <h1 class="banner__apresentacao">Olá, eu sou o<br><strong>Diego Salengue</strong></h1>
             <p class="banner__texto">Desenvolvedor full-stack e embeded software </p>
             <div class="banner__botao-solido">
-                <a href="#">Download CV</a>
+                <a href="#"  readonly>Download CV</a>
+                <a href="#" id="download" hidden>Download CV</a>
+
             </div>
-            <div class="banner__botao-vazado"><a href="#">Entrar em contato</a></div>
+            <div class="banner__botao-vazado">
+                <a href="#">Entrar em contato</a>
+            </div>
         </section>
         <section class="main__section" id="sobre">
             <h2 class="titulo-secao">Sobre mim</h2>
@@ -65,21 +69,51 @@
         <section class="main__section" id="conhecimento">
             <h2 class="titulo-secao">Conhecimento</h2>
             <div class="conhecimento__container">
-                <div class="conhecimento__item"><p>HTML 5</p><img src="./assets/html.svg" alt="HTML5"></div>
-                <div class="conhecimento__item"><p>CSS</p><img src="./assets/css.svg" alt="CSS"></div>
-                <div class="conhecimento__item"><p>SASS</p><img src="./assets/sass.svg" alt="SASS"></div>
-                <div class="conhecimento__item"><p>JavaScript</p><img src="./assets/javascript.svg" alt="JavaScript"></div>
-                <div class="conhecimento__item"><p>TypeScript</p><img src="./assets/typescript.svg" alt="Typescript"></div>
-                <div class="conhecimento__item"><p>Node JS</p><img src="./assets/node.svg" alt="NODEJS"></div>
-                <div class="conhecimento__item"><p>PHP</p><img src="./assets/php.svg" alt="PHP"></div>
-                <div class="conhecimento__item"><p>MySQL</p><img src="./assets/mysql.svg" alt="MYSQL"></div>
-                <div class="conhecimento__item"><p>MongoDB</p><img src="./assets/mongodb.svg" alt="MONGODB"></div>
-                <div class="conhecimento__item"><p>React</p><img src="./assets/react.svg" alt="REACT"></div>
-                <div class="conhecimento__item"><p>Styled Components</p><img src="./assets/styledcomponents.svg" alt="STYLED COMPONENTS"></div>
-                <div class="conhecimento__item"><p>Electron</p><img src="./assets/electron.svg" alt="ELECTRON"></div>
-                <div class="conhecimento__item"><p>C / C++</p><img src="./assets/c.svg" alt="C e C++"></div>
-                <div class="conhecimento__item"><p>Embedded software</p><img src="./assets/embeded.svg" alt="EMBEDED"></div>
-                <div class="conhecimento__item"><p>VHDL</p><img src="./assets/vhdl.svg" alt="VHDL"></div>
+                <div class="conhecimento__item">
+                    <p>HTML 5</p><img src="./assets/html.svg" alt="HTML5">
+                </div>
+                <div class="conhecimento__item">
+                    <p>CSS</p><img src="./assets/css.svg" alt="CSS">
+                </div>
+                <div class="conhecimento__item">
+                    <p>SASS</p><img src="./assets/sass.svg" alt="SASS">
+                </div>
+                <div class="conhecimento__item">
+                    <p>JavaScript</p><img src="./assets/javascript.svg" alt="JavaScript">
+                </div>
+                <div class="conhecimento__item">
+                    <p>TypeScript</p><img src="./assets/typescript.svg" alt="Typescript">
+                </div>
+                <div class="conhecimento__item">
+                    <p>Node JS</p><img src="./assets/node.svg" alt="NODEJS">
+                </div>
+                <div class="conhecimento__item">
+                    <p>PHP</p><img src="./assets/php.svg" alt="PHP">
+                </div>
+                <div class="conhecimento__item">
+                    <p>MySQL</p><img src="./assets/mysql.svg" alt="MYSQL">
+                </div>
+                <div class="conhecimento__item">
+                    <p>MongoDB</p><img src="./assets/mongodb.svg" alt="MONGODB">
+                </div>
+                <div class="conhecimento__item">
+                    <p>React</p><img src="./assets/react.svg" alt="REACT">
+                </div>
+                <div class="conhecimento__item">
+                    <p>Styled Components</p><img src="./assets/styledcomponents.svg" alt="STYLED COMPONENTS">
+                </div>
+                <div class="conhecimento__item">
+                    <p>Electron</p><img src="./assets/electron.svg" alt="ELECTRON">
+                </div>
+                <div class="conhecimento__item">
+                    <p>C / C++</p><img src="./assets/c.svg" alt="C e C++">
+                </div>
+                <div class="conhecimento__item">
+                    <p>Embedded software</p><img src="./assets/embeded.svg" alt="EMBEDED">
+                </div>
+                <div class="conhecimento__item">
+                    <p>VHDL</p><img src="./assets/vhdl.svg" alt="VHDL">
+                </div>
 
             </div>
 
@@ -117,3 +151,10 @@
 </body>
 
 </html>
+
+
+dlBtn.setAttribute("href", window.URL.createObjectURL(myFile));
+dlBtn.setAttribute("download", fileName);
+
+dlBtn.click() // Inicia o download ao finalizar o datalogger (pelo usuário, se atingir limite de registros ou se
+encontrar um registro vazio )

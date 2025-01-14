@@ -41,3 +41,13 @@ headerMenu.addEventListener("click", () => {
     }
 
 })
+
+const bannerBotaoDownload = document.querySelector('.banner__botao-solido');
+const downloadCurriculo = document.querySelector('#download');
+bannerBotaoDownload.addEventListener('click', ()=> {
+    console.log("bannerBotaoDownload")
+    downloadCurriculo.setAttribute("download", "./assets/Curriculo Diego Caldas Salengue.pdf");
+    downloadCurriculo.click() 
+})
+
+ // dlBtn.click() 
